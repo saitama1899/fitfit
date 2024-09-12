@@ -1,8 +1,6 @@
 // const publicMarvelKey = process.env.NEXT_PUBLIC_MARVEL_PUBLIC_KEY;
 
-// if (
-// 	!publicMarvelKey
-// ) {
+// if (!publicMarvelKey) {
 // 	throw new Error("Please provide necessary environment variables.");
 // }
 
@@ -12,7 +10,4 @@
 // 	search: "search",
 // };
 
-// export {
-// 	publicMarvelKey,
-// 	apiPaths,
-// };
+// export { publicMarvelKey, apiPaths };
