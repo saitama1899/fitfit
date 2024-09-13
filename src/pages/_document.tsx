@@ -10,7 +10,11 @@ import { ServerStyleSheet } from "styled-components";
 const App = () => (
 	<Html>
 		<link rel="icon" href="/images/icons/favicon.ico" />{" "}
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/icons/apple-touch-icon.png"
+		/>
 		<link
 			rel="icon"
 			type="image/png"
@@ -23,6 +27,7 @@ const App = () => (
 			sizes="512x512"
 			href="/images/icons/android-chrome-512x512.png"
 		/>
+		<title>Fit Fit</title>
 		<Head />
 		<body>
 			<Main />
