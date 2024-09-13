@@ -9,6 +9,7 @@ import { ServerStyleSheet } from "styled-components";
 
 const App = () => (
 	<Html>
+		<link rel="icon" href="/images/icons/favicon.ico" />
 		<Head />
 		<body>
 			<Main />
