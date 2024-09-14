@@ -7,11 +7,11 @@ const Header: React.FC = () => {
 		<HeaderWrapper>
 			<Link href={"/"}>
 				<Image
-					src="/images/logo.svg"
+					src="/images/logo.png"
 					alt="Movie Logo"
 					className="logo"
 					width={130}
-					height={52}
+					height={33}
 				/>
 			</Link>
 			<Link href={"/favorites"}>

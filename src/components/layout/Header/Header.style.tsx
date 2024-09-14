@@ -4,7 +4,7 @@ const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: black;
+  background-color: gray;
   color: white;
   height: ${({ theme }) => theme.layout.header_height};
   text-align: center;
