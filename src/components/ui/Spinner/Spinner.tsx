@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import styled, { keyframes } from "styled-components";
 
 const spin = keyframes`
@@ -18,7 +18,7 @@ const SpinnerWrapper = styled.div`
 `;
 
 const SpinnerElement = styled.div`
-  border: 8px solid ${(props) => props.theme.colors.input_placeholder};
+  border: 8px solid ${(props) => props.theme.colors.secondary};
   border-top: 8px solid ${(props) => props.theme.colors.primary};
   border-radius: 50%;
   width: 50px;
