@@ -23,7 +23,7 @@ const RoutinesScreenWrapper = styled.div`
       display: flex;
       align-items: center;
       gap: 20px;
-      padding: 10px 50px;
+      padding: 10px 30px;
       height: 80px;
       position: relative;
       background-color: rgba(21, 193, 147, 0.25);
