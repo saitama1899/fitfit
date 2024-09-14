@@ -5,6 +5,8 @@ export const HomeWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 50px;
+  max-width: 500px;
+  margin: 0 auto;
   @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
     padding: 36px 14px;
   }
@@ -23,6 +25,13 @@ export const HomeWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    h1 {
+      font-family: 'wildWolf', sans-serif;
+      font-size: 80px;
+      margin: 0;
+      font-weight: 400;
+      text-shadow: 3px 3px 0px ${(props) => props.theme.colors.primary};
+    }
   }
   .options {
     display: flex;

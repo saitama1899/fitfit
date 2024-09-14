@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 			) : (
 				<>
 					<div className="routine">
-						<p>Rutina</p>
+						<h1>Rutina</h1>
 					</div>
 					<div className="options">
 						<div className="exercises">

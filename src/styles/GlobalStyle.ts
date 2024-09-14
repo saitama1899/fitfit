@@ -7,11 +7,24 @@ import {
 
 const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
 	createGlobalStyle`
+
+  @font-face {
+    font-family: 'wildWolf';
+    src: url('/fonts/Wild-Wolf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: Roboto, sans-serif;
+  }
+
+  h1 {
+    font-family: 'wildWolf', sans-serif;
+    margin: 0;
   }
   ::-webkit-scrollbar {
     height: 5px;
