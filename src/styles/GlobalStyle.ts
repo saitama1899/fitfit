@@ -23,7 +23,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
   }
   
   ::-webkit-scrollbar-track {
-    background-color: ${MainTheme.colors.scrollbar};
+    background-color: ${MainTheme.colors.secondary};
   }
 `;
 
