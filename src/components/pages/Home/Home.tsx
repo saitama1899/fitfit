@@ -5,7 +5,7 @@ import Spinner from "@/components/ui/Spinner/Spinner";
 
 const Home: React.FC = () => {
 	const { loading } = useAppContext();
-	return <HomeWrapper>{loading ? <Spinner /> : <>Home</>}</HomeWrapper>;
+	return <HomeWrapper>{loading ? <Spinner /> : <></>}</HomeWrapper>;
 };
 
 export default Home;
