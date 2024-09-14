@@ -29,10 +29,11 @@ export const HomeWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 20px;
     img {
       width: 75px;
       transform: rotateZ(20deg);
+      filter: drop-shadow(4px 2px 0px rgba(0, 0, 0, 0.10));
     }
-    margin-left: 50px;
   }
 `;
