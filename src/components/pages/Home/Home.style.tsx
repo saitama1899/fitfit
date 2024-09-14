@@ -2,11 +2,14 @@ import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
   padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
-    padding: 28px 14px;
+    padding: 36px 14px;
   }
   .routine {
-    height: 150px;
+    height: 120px;
     padding: 25px;
     background-color: #c7d0cd;
     background-image: 
@@ -17,5 +20,19 @@ export const HomeWrapper = styled.div`
     border-top: 0px;
     border-left: 0px;
     border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .exercises {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 75px;
+      transform: rotateZ(20deg);
+    }
+    margin-left: 50px;
   }
 `;
