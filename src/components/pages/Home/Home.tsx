@@ -14,9 +14,15 @@ const Home: React.FC = () => {
 					<div className="routine">
 						<p>Rutina</p>
 					</div>
-					<div className="exercises">
-						<img src="./images/kettlebell.png" alt="exercises" />
-						<p>Ejercicios</p>
+					<div className="options">
+						<div className="exercises">
+							<img src="./images/kettlebell.png" alt="exercises" />
+							<p>Ejercicios</p>
+						</div>
+						<div className="create">
+							<img src="./images/gloves.png" alt="create" />
+							<p>Crear</p>
+						</div>
 					</div>
 				</>
 			)}

@@ -24,16 +24,38 @@ export const HomeWrapper = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .exercises {
-    width: 100px;
+  .options {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20px;
-    img {
-      width: 75px;
-      transform: rotateZ(20deg);
-      filter: drop-shadow(4px 2px 0px rgba(0, 0, 0, 0.10));
+    justify-content: space-around;
+    p {
+      margin-top: 8px;
+      background: ${(props) => props.theme.colors.primary};
+      color: white;
+      padding: 1px 12px;
+    }
+    .exercises {
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: rotateZ(-10deg);
+      img {
+        width: 75px;
+        transform: rotateZ(20deg);
+        filter: drop-shadow(4px 2px 0px rgba(0, 0, 0, 0.10));
+      }
+    }
+    .create {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: rotateZ(10deg);
+      img {
+        width: 90px;
+        transform: rotateZ(20deg);
+        filter: drop-shadow(4px 2px 0px rgba(0, 0, 0, 0.10));
+      }
     }
   }
 `;
