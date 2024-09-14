@@ -25,10 +25,9 @@ export const HomeWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     h1 {
-      font-family: 'wildWolf', sans-serif;
       font-size: 80px;
-      margin: 0;
       font-weight: 400;
       text-shadow: 3px 3px 0px ${(props) => props.theme.colors.primary};
     }
@@ -48,6 +47,7 @@ export const HomeWrapper = styled.div`
       flex-direction: column;
       align-items: center;
       transform: rotateZ(-10deg);
+      cursor: pointer;
       img {
         width: 75px;
         transform: rotateZ(20deg);
@@ -60,6 +60,7 @@ export const HomeWrapper = styled.div`
       flex-direction: column;
       align-items: center;
       transform: rotateZ(10deg);
+      cursor: pointer;
       img {
         width: 90px;
         transform: rotateZ(20deg);
