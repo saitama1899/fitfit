@@ -4,7 +4,9 @@ const RoutinesScreenWrapper = styled.div`
   padding: 48px;
   max-width: 500px;
   margin: 0 auto;
-
+  @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
+    padding: 36px 14px;
+  }
   h1 {
     font-size: 70px;
     text-align: center;
