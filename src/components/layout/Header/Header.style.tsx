@@ -20,13 +20,13 @@ const HeaderWrapper = styled.header`
   }
 `;
 
-const FavCount = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  span {
-    font-size: 13px;
-  }
-`;
+// const FavCount = styled.div`
+//   display: flex;
+//   align-items: flex-start;
+//   gap: 8px;
+//   span {
+//     font-size: 13px;
+//   }
+// `;
 
-export { HeaderWrapper, FavCount };
+export { HeaderWrapper };

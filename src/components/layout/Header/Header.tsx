@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FavCount, HeaderWrapper } from "./Header.style";
+import { HeaderWrapper } from "./Header.style";
 
 const Header: React.FC = () => {
 	return (
@@ -10,20 +10,9 @@ const Header: React.FC = () => {
 					src="/images/logo.png"
 					alt="Movie Logo"
 					className="logo"
-					width={130}
-					height={33}
+					width={50}
+					height={50}
 				/>
-			</Link>
-			<Link href={"/favorites"}>
-				<FavCount>
-					<Image
-						src={"/images/icons/fav.svg"}
-						alt="Fav"
-						className="fav"
-						width={17}
-						height={15}
-					/>
-				</FavCount>
 			</Link>
 		</HeaderWrapper>
 	);
