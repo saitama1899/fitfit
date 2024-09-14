@@ -8,9 +8,15 @@ const RoutinesScreen: React.FC = () => {
 			<h1>Rutinas</h1>
 			<div className="routines">
 				{routines.map((routine) => (
-					<div key={routine.id} className="routine">
-						<h2>{routine.name}</h2>
-						{/* <p>{routine.description}</p> */}
+					<div
+						key={routine.id}
+						className="routine"
+						style={{
+							backgroundImage: `url('./images/categoryBanners/${routine.category}.png')`,
+						}}
+					>
+						<h2>{routine.title}</h2>
+						<p>{routine.subtitle}</p>
 					</div>
 				))}
 			</div>

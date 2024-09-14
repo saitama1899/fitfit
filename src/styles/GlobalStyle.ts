@@ -28,10 +28,16 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     color: inherit;
   }
 
-  h1 {
+  h1, h2 {
     font-family: 'wildWolf', sans-serif;
+    font-weight: 400;
     margin: 0;
   }
+
+  p {
+    margin: 0;
+  }
+  
   ::-webkit-scrollbar {
     height: 5px;
     width: 5px;

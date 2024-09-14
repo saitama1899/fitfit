@@ -3,7 +3,9 @@ import { exercise } from "@/utils/routine";
 const routines: Routine[] = [
 	{
 		id: 1,
-		name: "Día 1: Pecho y Tríceps",
+		title: "Día 1",
+		subtitle: "Pecho y Tríceps",
+		category: 11,
 		exercises: [
 			exercise(35, [4, 10, 8, 90]),
 			exercise(37, [3, 12, 8, 60]),
@@ -13,7 +15,9 @@ const routines: Routine[] = [
 	},
 	{
 		id: 2,
-		name: "Día 2: Espalda y Bíceps",
+		title: "Día 2",
+		subtitle: "Espalda y Bíceps",
+		category: 10,
 		exercises: [
 			exercise(39, [4, 10, 8, 90]),
 			exercise(40, [3, 11, 8, 60]),
@@ -23,7 +27,9 @@ const routines: Routine[] = [
 	},
 	{
 		id: 3,
-		name: "Día 3: Piernas",
+		title: "Día 3",
+		subtitle: "Piernas",
+		category: 8,
 		exercises: [
 			exercise(43, [4, 12, 8, 90]),
 			exercise(44, [3, 11, 8, 60]),
@@ -33,7 +39,9 @@ const routines: Routine[] = [
 	},
 	{
 		id: 4,
-		name: "Día 4: Hombros y Core",
+		title: "Día 4",
+		subtitle: "Hombros y Core",
+		category: 13,
 		exercises: [
 			exercise(47, [4, 11, 8, 90]),
 			exercise(48, [3, 13, 8, 60]),
@@ -43,7 +51,9 @@ const routines: Routine[] = [
 	},
 	{
 		id: 5,
-		name: "Día 5: Cuerpo completo",
+		title: "Día 5",
+		subtitle: "Cuerpo Completo",
+		category: 14,
 		exercises: [
 			exercise(51, [4, 9, 8, 90]),
 			exercise(52, [4, 11, 8, 60]),

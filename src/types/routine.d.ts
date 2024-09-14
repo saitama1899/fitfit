@@ -1,5 +1,7 @@
 interface Routine {
 	id: number;
-	name: string;
+	title: string;
+	subtitle: string;
+	category: number;
 	exercises: Exercise[];
 }
