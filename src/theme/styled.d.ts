@@ -4,9 +4,9 @@ declare module "styled-components" {
 	export interface DefaultTheme {
 		colors: {
 			primary: string;
-			input_placeholder: string;
-			border: string;
-			scrollbar: string;
+			secondary: string;
+			dark: string;
+			background: string;
 		};
 		layout: {
 			header_height: string;

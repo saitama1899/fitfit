@@ -4,6 +4,7 @@ const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: ${({ theme }) => theme.colors.background};
 `;
 
 const MainContent = styled.main<{ hide: boolean }>`  

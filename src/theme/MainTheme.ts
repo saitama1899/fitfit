@@ -2,10 +2,12 @@ import type { DefaultTheme } from "styled-components";
 
 export const MainTheme: DefaultTheme = {
 	colors: {
-		primary: "#EC1D24",
-		input_placeholder: "#AAAAAA",
-		border: "#333333",
-		scrollbar: "#D9D9D9",
+		primary: "#15c192",
+		secondary: "#d8d8d8",
+		dark: "#161617",
+		// gradient del secondary con un tono similar claro del primary
+		background:
+			"linear-gradient(to bottom, #f1f1f1, #ecf1f8, #dff3fc, #d2f5f8, #ccf7eb)",
 	},
 	layout: {
 		header_height: "84px",

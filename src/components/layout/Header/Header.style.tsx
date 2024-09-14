@@ -22,8 +22,8 @@ const HeaderWrapper = styled.header`
       align-items: center;
       justify-content: center;
       position: relative;
-      width: 80px;
-      height: 80px;
+      width: 78px;
+      height: 78px;
     }
 
     .logo-image {
@@ -42,6 +42,13 @@ const HeaderWrapper = styled.header`
 
   .exiting {
     animation: scaleDown .3s forwards;
+  }
+  .floor {
+    background-color: ${({ theme }) => theme.colors.dark};
+    width: 70px;
+    height: 2px;
+    margin: 0 auto;
+    border-radius: 30%;
   }
 
   @keyframes scaleUp {
