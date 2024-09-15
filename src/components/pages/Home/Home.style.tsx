@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
-  padding: 48px;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  max-width: 500px;
-  margin: 0 auto;
+  width: 100%;
   @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
     padding: 36px 14px;
   }
@@ -26,11 +24,6 @@ export const HomeWrapper = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    h1 {
-      font-size: 80px;
-      font-weight: 400;
-      text-shadow: 3px 3px 0px ${(props) => props.theme.colors.primary};
-    }
   }
   .options {
     display: flex;

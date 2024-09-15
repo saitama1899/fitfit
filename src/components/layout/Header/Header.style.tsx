@@ -3,14 +3,12 @@ import styled from "styled-components";
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
-  width: 100%;
   color: white;
   background-color: #f1f1f1;
   height: ${({ theme }) => theme.layout.header_height};
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 0 48px;
   align-items: center;
   box-sizing: border-box;
   z-index: 1;

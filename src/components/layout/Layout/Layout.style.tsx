@@ -4,13 +4,22 @@ const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: ${({ theme }) => theme.colors.background};
+  max-width: 500px;
+  margin: 0 auto;
+  @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
+    padding: 36px 14px;
+  }
 `;
 
 const MainContent = styled.main<{ hide: boolean }>`  
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
-  margin-top: ${({ hide, theme }) => (hide ? "0" : theme.layout.header_height)};
-  height: calc(100vh - ${({ theme }) => theme.layout.header_height});
+  margin-top: ${({ hide, theme }) => (hide ? "0" : `${theme.layout.header_height + 24}px`)};
+  height: calc(100vh - ${({ theme }) => `${theme.layout.header_height + 24}px`});
   overflow: hidden;
 `;
 

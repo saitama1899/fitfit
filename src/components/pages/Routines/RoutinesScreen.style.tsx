@@ -1,18 +1,14 @@
 import styled from "styled-components";
 
 const RoutinesScreenWrapper = styled.div`
-  padding: 48px;
-  max-width: 500px;
-  margin: 0 auto;
-  @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
-    padding: 36px 14px;
-  }
+  width: 100%;
   h1 {
     font-size: 70px;
     text-align: center;
     font-weight: 400;
     text-shadow: 3px 3px 0px ${(props) => props.theme.colors.secondary};
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    line-height: .75;
   }
 
   .routines {
@@ -46,18 +42,9 @@ const RoutinesScreenWrapper = styled.div`
         background: rgb(235 244 240 / 94%);
         z-index: 1;
       }
-
-      h2, p {
-        position: relative;
-        z-index: 2;
-        margin: 0;
-      }
-
-      h2 {
-        font-size: 40px;
-      }
-
+      
       p {
+        z-index: 2;
         font-weight: 500;
         font-size: 20px;
       }

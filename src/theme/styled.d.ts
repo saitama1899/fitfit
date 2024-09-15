@@ -9,7 +9,7 @@ declare module "styled-components" {
 			background: string;
 		};
 		layout: {
-			header_height: string;
+			header_height: number;
 		};
 		breakpoints: {
 			xs: string;

@@ -28,4 +28,5 @@ const exercise = (
 	};
 };
 
+
 export { getExercise, exercise };

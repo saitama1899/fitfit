@@ -1,11 +1,14 @@
 import type React from "react";
 import { RoutinesScreenWrapper } from "./RoutinesScreen.style";
 import routines from "@/data/routines";
+import { useRouter } from "next/router";
 
 const RoutinesScreen: React.FC = () => {
+	const router = useRouter();
+
 	return (
 		<RoutinesScreenWrapper>
-			<h1>Rutinas</h1>
+			<h2>Rutinas</h2>
 			<div className="routines">
 				{routines.map((routine) => (
 					<div
@@ -14,20 +17,10 @@ const RoutinesScreen: React.FC = () => {
 						style={{
 							backgroundImage: `url('./images/categoryBanners/${routine.category}.png')`,
 						}}
+						onClick={() => router.push(`/routines/${routine.id}`)}
+						onKeyDown={() => router.push(`/routines/${routine.id}`)}
 					>
-						<h2>{routine.title}</h2>
-						<p>{routine.subtitle}</p>
-					</div>
-				))}
-				{routines.map((routine) => (
-					<div
-						key={routine.id}
-						className="routine"
-						style={{
-							backgroundImage: `url('./images/categoryBanners/${routine.category}.png')`,
-						}}
-					>
-						<h2>{routine.title}</h2>
+						<h3>{routine.title}</h3>
 						<p>{routine.subtitle}</p>
 					</div>
 				))}

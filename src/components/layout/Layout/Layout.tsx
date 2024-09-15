@@ -6,8 +6,10 @@ import { LayoutWrapper, MainContent } from "./Layout.style";
 const Layout: React.FC<LayoutProps> = ({ children, hide = false }) => {
 	return (
 		<LayoutWrapper>
-			{!hide && <Header />}
-			<MainContent hide={hide}>{children}</MainContent>
+			<MainContent hide={hide}>
+				{!hide && <Header />}
+				{children}
+			</MainContent>
 		</LayoutWrapper>
 	);
 };

@@ -22,6 +22,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     font-family: Roboto, sans-serif;
     user-select: none;
     overflow: hidden;
+    background-image: ${MainTheme.colors.background};
   }
 
   a {
@@ -29,7 +30,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     color: inherit;
   }
 
-  h1, h2 {
+  h1, h2, h3 {
     font-family: 'wildWolf', sans-serif;
     font-weight: 400;
     margin: 0;
@@ -37,6 +38,29 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
 
   p {
     margin: 0;
+  }
+
+  h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-shadow: 3px 3px 0px ${MainTheme.colors.primary};
+  }
+
+  h2 {
+    font-size: 70px;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 3px 3px 0px #d8d8d8;
+    margin-bottom: 35px;
+    line-height: 1.2;
+    font-size: 70px;
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    font-size: 50px;
+    color: ${MainTheme.colors.dark};
+    z-index: 2;
   }
 
   ::-webkit-scrollbar {

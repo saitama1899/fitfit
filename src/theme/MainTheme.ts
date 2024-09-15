@@ -9,7 +9,7 @@ export const MainTheme: DefaultTheme = {
 			"linear-gradient(to bottom, #f1f1f1, #f1f3f7, #edf7fc, #e9fbfd, #e8fff9)",
 	},
 	layout: {
-		header_height: "84px",
+		header_height: 84,
 	},
 	breakpoints: {
 		xs: "320px",
