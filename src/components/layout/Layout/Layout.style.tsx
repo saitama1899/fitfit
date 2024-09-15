@@ -7,7 +7,7 @@ const LayoutWrapper = styled.div`
   max-width: 500px;
   margin: 0 auto;
   @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
-    padding: 36px 14px;
+    padding: 24px 14px;
   }
 `;
 
