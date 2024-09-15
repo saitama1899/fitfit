@@ -4,6 +4,8 @@ import {
 	type GlobalStyleComponent,
 	createGlobalStyle,
 } from "styled-components";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
 	createGlobalStyle`
@@ -73,6 +75,11 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
   
   ::-webkit-scrollbar-track {
     background-color: ${MainTheme.colors.secondary};
+  }
+
+  .screen-content {
+    height: calc(100vh - 300px);
+    overflow-y: auto;
   }
 `;
 

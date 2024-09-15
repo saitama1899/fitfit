@@ -11,13 +11,9 @@ const useHeader = () => {
 		const handleDocumentClick = () => {
 			setClickCount((prevCount) => prevCount + 1);
 		};
-
-		// document.addEventListener("click", handleDocumentClick);
-		// cambiar evento para que funcione mejor en dispositivos móviles
 		document.addEventListener("touchstart", handleDocumentClick);
 
 		return () => {
-			// document.removeEventListener("click", handleDocumentClick);
 			document.removeEventListener("touchstart", handleDocumentClick);
 		};
 	}, []);

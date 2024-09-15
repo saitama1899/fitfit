@@ -9,7 +9,7 @@ const RoutinesScreen: React.FC = () => {
 	return (
 		<RoutinesScreenWrapper>
 			<h2>Rutinas</h2>
-			<div className="routines">
+			<div className="screen-content routines">
 				{routines.map((routine) => (
 					<div
 						key={routine.id}

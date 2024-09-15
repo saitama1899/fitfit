@@ -15,8 +15,6 @@ const RoutinesScreenWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: calc(100vh - 300px);
-    overflow-y: auto;
 
     .routine {
       display: flex;
