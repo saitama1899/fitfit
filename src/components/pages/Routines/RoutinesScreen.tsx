@@ -19,6 +19,18 @@ const RoutinesScreen: React.FC = () => {
 						<p>{routine.subtitle}</p>
 					</div>
 				))}
+				{routines.map((routine) => (
+					<div
+						key={routine.id}
+						className="routine"
+						style={{
+							backgroundImage: `url('./images/categoryBanners/${routine.category}.png')`,
+						}}
+					>
+						<h2>{routine.title}</h2>
+						<p>{routine.subtitle}</p>
+					</div>
+				))}
 			</div>
 		</RoutinesScreenWrapper>
 	);

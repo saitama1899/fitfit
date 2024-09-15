@@ -12,12 +12,15 @@ const RoutinesScreenWrapper = styled.div`
     text-align: center;
     font-weight: 400;
     text-shadow: 3px 3px 0px ${(props) => props.theme.colors.secondary};
+    margin-bottom: 20px;
   }
 
   .routines {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: calc(100vh - 250px);
+    overflow-y: auto;
 
     .routine {
       display: flex;

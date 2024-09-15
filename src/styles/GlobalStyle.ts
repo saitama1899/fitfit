@@ -21,6 +21,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     user-select: none;
+    overflow: hidden;
   }
 
   a {
@@ -37,7 +38,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
   p {
     margin: 0;
   }
-  
+
   ::-webkit-scrollbar {
     height: 5px;
     width: 5px;
