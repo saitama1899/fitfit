@@ -47,18 +47,17 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
   }
 
   h2 {
-    font-size: 70px;
+    font-size: 46px;
     text-align: center;
     font-weight: 400;
     text-shadow: 3px 3px 0px #d8d8d8;
-    margin-bottom: 35px;
+    margin-bottom: 14px;
     line-height: 1.2;
-    font-size: 70px;
     margin-bottom: 24px;
   }
 
   h3 {
-    font-size: 50px;
+    font-size: 38px;
     color: ${MainTheme.colors.dark};
     z-index: 2;
   }
