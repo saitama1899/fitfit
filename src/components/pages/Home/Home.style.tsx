@@ -5,9 +5,6 @@ export const HomeWrapper = styled.div`
   flex-direction: column;
   gap: 50px;
   width: 100%;
-  @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
-    padding: 36px 14px;
-  }
   .routine {
     height: 120px;
     padding: 25px;
