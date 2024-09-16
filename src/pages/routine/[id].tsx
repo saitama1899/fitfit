@@ -50,7 +50,7 @@ const Routine: React.FC = () => {
 
 	return (
 		<RoutineWrapper>
-			<h2>{routine?.subtitle}</h2>
+			<h2>{routine?.subtitle || routine?.title}</h2>
 			<div className="screen-content">
 				<Slider {...settings}>
 					{routine?.exercises.map((exercise) => (
