@@ -92,8 +92,6 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     height: calc(100vh - 224px);
     overflow-y: auto;
     overflow-x: hidden;
-    flex-grow: 1;
-    margin-bottom: 14px;
   }
 
   /* Slick slider overrides */
@@ -101,7 +99,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     height: 100%;
   }
   .slick-dots {
-    bottom: 25px;
+    bottom: 0px;
   }
   .slick-active {
     button::before {

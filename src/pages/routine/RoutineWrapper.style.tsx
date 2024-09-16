@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 const RoutineWrapper = styled.div`
   width: 100%;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
 
   .exercise {
     margin: 0 auto;
