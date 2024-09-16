@@ -6,7 +6,7 @@ export const MainTheme: DefaultTheme = {
 		secondary: "#d8d8d8",
 		dark: "#161617",
 		background:
-			"linear-gradient(to bottom, #f1f1f1, #f1f3f7, #edf7fc, #e9fbfd, #e8fff9)",
+			"linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)",
 	},
 	layout: {
 		header_height: 84,

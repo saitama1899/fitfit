@@ -427,7 +427,7 @@ const exercises: Exercise[] = [
 	{
 		id: 46,
 		name: "Calf Raise",
-		img: "/images/exercises/legs/calf-raise.gif",
+		img: "/images/exercises/legs/calf-raise-dumbbell.gif",
 		category: 1,
 		subCategory: 8,
 		description:
@@ -437,7 +437,7 @@ const exercises: Exercise[] = [
 	{
 		id: 47,
 		name: "Dumbbell Military Press",
-		img: "/images/exercises/shoulders/dumbbell-military-press.gif",
+		img: "/images/exercises/shoulders/dumbell-military-press.gif",
 		category: 1,
 		subCategory: 13,
 		description:

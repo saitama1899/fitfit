@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 			) : (
 				<>
 					<Link className="routine" href="/routines">
-						<h1>Rutina</h1>
+						<h1>Rutinas</h1>
 					</Link>
 					<div className="options">
 						<div className="exercises">

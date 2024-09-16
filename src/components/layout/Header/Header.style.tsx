@@ -4,7 +4,6 @@ const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   color: white;
-  background-color: #f1f1f1;
   height: ${({ theme }) => `${theme.layout.header_height}px`};
   text-align: center;
   display: flex;

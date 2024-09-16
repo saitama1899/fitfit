@@ -3,10 +3,9 @@ import Spinner from "@/components/ui/Spinner/Spinner";
 import { useAppContext } from "@/context/AppContext";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 import routines from "@/data/routines";
 import RoutineWrapper from "./RoutineWrapper.style";
+import Slider from "react-slick";
 
 interface Params extends ParsedUrlQuery {
 	id: string;
@@ -18,10 +17,12 @@ const Routine: React.FC = () => {
 	const { id } = router.query as Params;
 	const [routine, setRoutine] = useState<Routine | null>(null);
 
-	const pagination = {
-		clickable: true,
-		renderBullet: (index: number, className: string) =>
-			`<span class="${className}">${index + 1}</span>`,
+	const settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 	};
 
 	const getRoutine = (id: number): Routine => {
@@ -49,17 +50,37 @@ const Routine: React.FC = () => {
 		<RoutineWrapper>
 			<h2>{routine?.subtitle}</h2>
 			<div className="screen-content">
-				{routine?.exercises.map((exercise) => (
-					<div className="exercise" key={exercise.id}>
-						<h3>{exercise.name}</h3>
-						<img src={exercise.img} alt={exercise.name} width={250}/>
-						<p>{exercise.description}</p>
-						<p>{exercise.sets} sets</p>
-						<p>{exercise.reps} reps</p>
-						<p>{exercise.weight} kg</p>
-						<p>{exercise.rest} seconds rest</p>
-					</div>
-				))}
+				<Slider {...settings}>
+					{routine?.exercises.map((exercise) => (
+						<div className="exercise" key={exercise.id}>
+							<h4>{exercise.name}</h4>
+							<div className="image-description-container">
+								<img src={exercise.img} alt={exercise.name} />
+								<div className="description">
+									<p>{exercise.description}</p>
+								</div>
+							</div>
+							<div className="details">
+								<p>
+									<b>Sets </b>
+									{exercise.sets}
+								</p>
+								<p>
+									<b>Reps </b>
+									{exercise.reps}
+								</p>
+								<p>
+									<b>Weight </b>
+									{exercise.weight}kg
+								</p>
+								<p>
+									<b>Rest </b>
+									{exercise.rest}s
+								</p>
+							</div>
+						</div>
+					))}
+				</Slider>
 			</div>
 		</RoutineWrapper>
 	);

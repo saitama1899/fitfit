@@ -4,8 +4,8 @@ import {
 	type GlobalStyleComponent,
 	createGlobalStyle,
 } from "styled-components";
-import "swiper/css";
-import "swiper/css/pagination";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
 	createGlobalStyle`
@@ -16,6 +16,12 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     font-weight: normal;
     font-style: normal;
   }
+  
+  html {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  }
 
   body {
     margin: 0;
@@ -24,7 +30,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     font-family: Roboto, sans-serif;
     user-select: none;
     overflow: hidden;
-    background-image: ${MainTheme.colors.background};
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIzIiB2aWV3Qm94PSIwIDAgMyAzIg0KICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQogIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBzdHlsZT0iZmlsbDpyZ2JhKDAsMCwwLC4yKSIvPjwvc3ZnPg==");
   }
 
   a {
@@ -45,14 +51,14 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
   h1 {
     font-size: 80px;
     font-weight: 400;
-    text-shadow: 3px 3px 0px ${MainTheme.colors.primary};
+    text-shadow: 3px 3px 0px #d8d8d8;
   }
 
   h2 {
     font-size: 46px;
     text-align: center;
     font-weight: 400;
-    text-shadow: 3px 3px 0px #d8d8d8;
+    text-shadow: 3px 3px 0px ${MainTheme.colors.secondary};
     margin-bottom: 14px;
     line-height: 1.2;
     margin-bottom: 24px;
@@ -80,6 +86,22 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
   .screen-content {
     height: calc(100vh - 300px);
     overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* Slick slider overrides */
+  .slick-slider, .slick-list, .slick-track, .slick-slide, .slick-slide > div {
+    height: 100%;
+  }
+  .slick-dots {
+    bottom: 0px;
+  }
+  .slick-active {
+    button::before {
+      background-color: ${MainTheme.colors.primary};
+      border-radius: 50%;
+      color: white;
+    }
   }
 `;
 

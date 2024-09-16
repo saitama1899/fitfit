@@ -11,10 +11,10 @@ const useHeader = () => {
 		const handleDocumentClick = () => {
 			setClickCount((prevCount) => prevCount + 1);
 		};
-		document.addEventListener("touchstart", handleDocumentClick);
 
+		document.addEventListener("click", handleDocumentClick);
 		return () => {
-			document.removeEventListener("touchstart", handleDocumentClick);
+			document.removeEventListener("click", handleDocumentClick);
 		};
 	}, []);
 

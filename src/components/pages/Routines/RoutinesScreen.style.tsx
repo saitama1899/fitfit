@@ -37,7 +37,7 @@ const RoutinesScreenWrapper = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgb(235 244 240 / 94%);
+        background: rgb(207 217 223 / 95%);
         z-index: 1;
       }
       
