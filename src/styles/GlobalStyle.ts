@@ -83,7 +83,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
   }
 
   .screen-content {
-    height: calc(100vh - 180px);
+    height: calc(100vh - 224px);
     overflow-y: auto;
     overflow-x: hidden;
   }
