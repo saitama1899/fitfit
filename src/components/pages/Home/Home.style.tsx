@@ -58,7 +58,7 @@ export const HomeWrapper = styled.div`
       background: ${(props) => props.theme.colors.primary_inverse};
     }
     img {
-      filter: brightness(0.75) grayscale(1);
+      /* filter: brightness(0.75) grayscale(1); */
       width: 135px;
     }
   }
