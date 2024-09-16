@@ -6,7 +6,7 @@ import Spinner from "@/components/ui/Spinner/Spinner";
 import routines from "@/data/routines";
 import categories from "@/data/categories";
 
-import { RoutinesWrapper } from "./RoutinesWrapper.style";
+import RoutinesWrapper from "./RoutinesWrapper.style";
 interface Params extends ParsedUrlQuery {
 	id: string;
 }

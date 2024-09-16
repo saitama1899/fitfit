@@ -50,4 +50,4 @@ const RoutinesWrapper = styled.div`
   }
 `;
 
-export { RoutinesWrapper };
+export default RoutinesWrapper;
