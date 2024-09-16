@@ -101,7 +101,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     height: 100%;
   }
   .slick-dots {
-    bottom: 25px;
+    bottom: 70px;
   }
   .slick-active {
     button::before {
