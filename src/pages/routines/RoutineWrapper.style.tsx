@@ -45,15 +45,26 @@ const RoutineWrapper = styled.div`
         opacity: 1;
       }
     }
-
-    .details {
+    .details-container {
       padding: 6px;
-      p {
-        margin: 8px 0;
-        padding-bottom: 4px;
+      display: flex;
+      gap: 10px;
+      .details {
+        width: 50%;
+        p {
+          margin: 8px 0;
+          display: flex;
+          border-bottom: 1px solid ${({ theme }) => theme.colors.dark};
+          justify-content: space-between;
+          padding: 0px 4px 4px;
+        }
+      }
+      .tools {
+        width: 50%;
         display: flex;
-        border-bottom: 1px solid ${({ theme }) => theme.colors.dark};
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
       }
     }
   }

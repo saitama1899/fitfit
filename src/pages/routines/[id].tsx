@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import routines from "@/data/routines";
 import RoutineWrapper from "./RoutineWrapper.style";
 import Slider from "react-slick";
+import Timer from "@/components/ui/Timer/Timer";
+import Counter from "@/components/ui/Counter/Counter";
 
 interface Params extends ParsedUrlQuery {
 	id: string;
@@ -60,23 +62,26 @@ const Routine: React.FC = () => {
 									<p>{exercise.description}</p>
 								</div>
 							</div>
-							<div className="details">
-								<p>
-									<b>Sets </b>
-									{exercise.sets}
-								</p>
-								<p>
-									<b>Reps </b>
-									{exercise.reps}
-								</p>
-								<p>
-									<b>Weight </b>
-									{exercise.weight}kg
-								</p>
-								<p>
-									<b>Rest </b>
-									{exercise.rest}s
-								</p>
+							<div className="details-container">
+								<div className="details">
+									<p>
+										<b>Sets </b>
+										{exercise.sets}
+									</p>
+									<p>
+										<b>Reps </b>
+										{exercise.reps}
+									</p>
+									<p>
+										<b>Weight </b>
+										{exercise.weight}kg
+									</p>
+									<p>
+										<b>Rest </b>
+										{exercise.rest}s
+									</p>
+								</div>
+								<div className="tools"><Timer /><Counter /></div>
 							</div>
 						</div>
 					))}
