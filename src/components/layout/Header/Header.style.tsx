@@ -4,7 +4,6 @@ const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   color: white;
-  height: ${({ theme }) => `${theme.layout.header_height}px`};
   text-align: center;
   display: flex;
   justify-content: center;
@@ -20,8 +19,8 @@ const HeaderWrapper = styled.header`
       align-items: center;
       justify-content: center;
       position: relative;
-      width: 78px;
-      height: 78px;
+      width: 54px;
+      height: 54px;
     }
 
     .logo-image {
@@ -43,7 +42,7 @@ const HeaderWrapper = styled.header`
   }
   .floor {
     background-color: ${({ theme }) => theme.colors.dark};
-    width: 70px;
+    width: 42px;
     height: 2px;
     margin: 0 auto;
     border-radius: 30%;

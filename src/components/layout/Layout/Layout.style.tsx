@@ -18,8 +18,8 @@ const MainContent = styled.main<{ hide: boolean }>`
   flex-direction: column;
   align-items: center;
   flex: 1;
-  margin-top: ${({ hide, theme }) => (hide ? "0" : `${theme.layout.header_height + 24}px`)};
-  height: calc(100vh - ${({ theme }) => `${theme.layout.header_height + 24}px`});
+  margin-top: ${({ hide, theme }) => (hide ? "0" : `${theme.layout.header_height}px`)};
+  height: calc(100vh - ${({ theme }) => `${theme.layout.header_height}px`});
   overflow: hidden;
 `;
 
