@@ -33,7 +33,7 @@ const useTimer = () => {
     setTime(0);
   }, []);
 
-  return { time, isActive, start, stop, reset };
+  return { time, isActive, start, stop, reset, setIsActive };
 };
 
 export default useTimer;

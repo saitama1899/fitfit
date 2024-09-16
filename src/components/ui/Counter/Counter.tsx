@@ -12,10 +12,10 @@ const Counter: React.FC<CounterProps> = ({ initialCount = 0 }) => {
 	return (
 		<CounterWrapper>
 			<div className="series-counter">
+				<span className="count">{count}</span>
 				<button type="button" className="decrement" onClick={decrement}>
 					-
 				</button>
-				<span className="count">{count}</span>
 				<button type="button" className="increment" onClick={increment}>
 					+
 				</button>

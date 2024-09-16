@@ -8,24 +8,30 @@ const CounterWrapper = styled.div`
   width: 120px;
   .series-counter {
     display: flex;
-    /* align-items: flex-end; */
+    border: 1px solid #a4a4a4;
+    border-radius: 30px;
+    width: 80%;
+    height: 43px;
 
     .decrement,
     .increment {
       color: ${({ theme }) => theme.colors.primary};
-      background: #f0f0f0a8;
+      background: none;
       border: none;
-      width: 30px;
-      height: 30px;
       font-size: 1.5rem;
       cursor: pointer;
-      border-radius: 4px;
+      width: 33%;
+      padding: 0;
+    }
+    .decrement {
+      border-right: 1px solid #a4a4a4;
+      border-left: 1px solid #a4a4a4;
     }
 
     .count {
       font-size: 2rem;
-      width: 40px;
       text-align: center;
+      width: 33%;
     }
   }
 

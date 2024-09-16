@@ -48,9 +48,9 @@ const RoutineWrapper = styled.div`
     .details-container {
       padding: 6px;
       display: flex;
-      gap: 10px;
+      gap: 28px;
       .details {
-        width: 50%;
+        width: 75%;
         p {
           margin: 8px 0;
           display: flex;
@@ -60,11 +60,16 @@ const RoutineWrapper = styled.div`
         }
       }
       .tools {
-        width: 50%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        background: #f6f6f6c7;
+        margin: 8px 0px;
+        border-radius: 30px;
+        border: 1px solid #a4a4a4;
+        border-bottom: 3px solid #a4a4a4;
       }
     }
   }
