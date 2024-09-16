@@ -23,7 +23,7 @@ const TimerWrapper = styled.div`
       padding: 0;
       cursor: pointer;
       color: ${({ theme }) => theme.colors.primary};
-      font-size: 1.75rem;
+      font-size: 2rem;
       background-color: #f0f0f0a8;
       border-radius: 50%;
       width: 30px;
