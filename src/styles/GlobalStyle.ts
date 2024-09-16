@@ -61,7 +61,6 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     text-shadow: 3px 3px 0px ${MainTheme.colors.secondary};
     margin-bottom: 14px;
     line-height: 1.2;
-    margin-bottom: 24px;
   }
 
   h3 {
