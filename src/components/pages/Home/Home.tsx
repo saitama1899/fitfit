@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 				<Spinner />
 			) : (
 				<>
-					<Link className="routine" href="/routines">
+					<Link className="routine" href="/routines/1">
 						<h1>Rutinas</h1>
 					</Link>
 					<div className="options">
@@ -25,11 +25,11 @@ const Home: React.FC = () => {
 							<p>Crear</p>
 						</div>
 					</div>
-					<div
-						className="stretching"
-					>
-						<img src="./images/stretching.png" alt="stretching" />
-						<p>Estiramientos</p>
+					<div className="stretching">
+						<Link href="/routines/2">
+							<img src="./images/stretching.png" alt="stretching" />
+							<p>Estiramientos</p>
+						</Link>
 					</div>
 				</>
 			)}

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const RoutinesScreenWrapper = styled.div`
+const RoutinesWrapper = styled.div`
   width: 100%;
   h1 {
     font-size: 70px;
@@ -50,4 +50,4 @@ const RoutinesScreenWrapper = styled.div`
   }
 `;
 
-export { RoutinesScreenWrapper };
+export { RoutinesWrapper };

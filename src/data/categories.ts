@@ -78,3 +78,5 @@ const categories: Category[] = [
 		title: "Full body",
 	}
 ];
+
+export default categories;

@@ -1,11 +1,13 @@
 import { exercise } from "@/utils/routine";
 
 const routines: Routine[] = [
+	// Ejercicio
 	{
 		id: 1,
 		title: "Día 1",
 		subtitle: "Pecho y Tríceps",
-		category: 11,
+		category: 1,
+		subcategory: 11,
 		exercises: [
 			exercise(35, [4, 10, 8, 90]),
 			exercise(37, [3, 12, 8, 60]),
@@ -17,7 +19,8 @@ const routines: Routine[] = [
 		id: 2,
 		title: "Día 2",
 		subtitle: "Espalda y Bíceps",
-		category: 10,
+		category: 1,
+		subcategory: 10,
 		exercises: [
 			exercise(39, [4, 10, 8, 90]),
 			exercise(40, [3, 11, 8, 60]),
@@ -29,7 +32,8 @@ const routines: Routine[] = [
 		id: 3,
 		title: "Día 3",
 		subtitle: "Piernas",
-		category: 8,
+		category: 1,
+		subcategory: 8,
 		exercises: [
 			exercise(43, [4, 12, 8, 90]),
 			exercise(44, [3, 11, 8, 60]),
@@ -41,7 +45,8 @@ const routines: Routine[] = [
 		id: 4,
 		title: "Día 4",
 		subtitle: "Hombros y Core",
-		category: 13,
+		category: 1,
+		subcategory: 13,
 		exercises: [
 			exercise(47, [4, 11, 8, 90]),
 			exercise(48, [3, 13, 8, 60]),
@@ -52,13 +57,81 @@ const routines: Routine[] = [
 	{
 		id: 5,
 		title: "Día 5",
+		category: 1,
 		subtitle: "Cuerpo Completo",
-		category: 14,
+		subcategory: 14,
 		exercises: [
 			exercise(51, [4, 9, 8, 90]),
 			exercise(52, [4, 11, 8, 60]),
 			exercise(53, [3, 13, 8, 90]),
 			exercise(54, [4, 18, 8, 60]),
+		],
+	},
+	// Estiramiento
+	{
+		id: 6,
+		title: "Cadera",
+		category: 2,
+		subcategory: 17,
+		exercises: [
+			exercise(1, [2, 30, 0, 0], true),
+			exercise(2, [1, 60, 0, 0], true),
+			exercise(3, [1, 60, 0, 0], true),
+			exercise(4, [1, 60, 0, 0], true),
+			exercise(5, [2, 30, 0, 0], true),
+			exercise(6, [2, 30, 0, 0], true),
+			exercise(7, [2, 30, 0, 0], true),
+			exercise(8, [1, 60, 0, 0], true),
+			exercise(9, [2, 30, 0, 0], true),
+			exercise(10, [2, 30, 0, 0], true),
+			exercise(11, [2, 30, 0, 0], true),
+			exercise(12, [1, 60, 0, 0], true),
+		],
+	},
+	{
+		id: 7,
+		title: "Espalda",
+		category: 2,
+		subcategory: 10,
+		exercises: [
+			exercise(13, [2, 30, 0, 0], true),
+			exercise(14, [1, 60, 0, 0], true),
+			exercise(15, [1, 60, 0, 0], true),
+			exercise(16, [1, 60, 0, 0], true),
+			exercise(17, [2, 30, 0, 0], true),
+			exercise(18, [2, 30, 0, 0], true),
+			exercise(19, [1, 60, 0, 0], true),
+			exercise(20, [1, 60, 0, 0], true),
+			exercise(21, [2, 30, 0, 0], true),
+			exercise(22, [2, 30, 0, 0], true),
+			exercise(23, [2, 30, 0, 0], true),
+			exercise(24, [2, 30, 0, 0], true),
+			exercise(25, [1, 60, 0, 0], true),
+		],
+	},
+	{
+		id: 8,
+		title: "Piernas",
+		category: 2,
+		subcategory: 8,
+		exercises: [
+			exercise(26, [2, 30, 0, 0], true),
+			exercise(27, [2, 30, 0, 0], true),
+			exercise(28, [1, 60, 0, 0], true),
+			exercise(29, [2, 30, 0, 0], true),
+		],
+	},
+	{
+		id: 9,
+		title: "Brazos",
+		category: 2,
+		subcategory: 12,
+		exercises: [
+			exercise(30, [2, 30, 0, 0], true),
+			exercise(31, [2, 30, 0, 0], true),
+			exercise(32, [2, 30, 0, 0], true),
+			exercise(33, [2, 30, 0, 0], true),
+			exercise(34, [1, 60, 0, 0], true),
 		],
 	},
 ];
