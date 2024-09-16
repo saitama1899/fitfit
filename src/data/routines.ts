@@ -46,7 +46,7 @@ const routines: Routine[] = [
 			exercise(47, [4, 11, 8, 90]),
 			exercise(48, [3, 13, 8, 60]),
 			exercise(49, [3, 11, 8, 60]),
-			exercise(50, [3, 45, 8, 60], true),
+			exercise(50, [3, 45, 0, 60], true),
 		],
 	},
 	{

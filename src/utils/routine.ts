@@ -20,13 +20,12 @@ const exercise = (
 	}
 	return {
 		...exercise,
-		sets: detail[0],
+		sets: detail[0] > 0 ? detail[0] : undefined,
 		duration: duration ? detail[1] : undefined,
 		reps: duration ? undefined : detail[1],
-		weight: detail[2],
-		rest: detail[3],
+		weight: detail[2] > 0 ? detail[2] : undefined,
+		rest: detail[3] > 0 ? detail[3] : undefined,
 	};
 };
-
 
 export { getExercise, exercise };

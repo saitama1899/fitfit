@@ -64,24 +64,41 @@ const Routine: React.FC = () => {
 							</div>
 							<div className="details-container">
 								<div className="details">
-									<p>
-										<b>Sets </b>
-										{exercise.sets}
-									</p>
-									<p>
-										<b>Reps </b>
-										{exercise.reps}
-									</p>
-									<p>
-										<b>Weight </b>
-										{exercise.weight}kg
-									</p>
-									<p>
-										<b>Rest </b>
-										{exercise.rest}s
-									</p>
+									{exercise.sets && (
+										<p>
+											<b>Sets </b>
+											{exercise.sets}
+										</p>
+									)}
+									{exercise.reps && (
+										<p>
+											<b>Reps </b>
+											{exercise.reps}
+										</p>
+									)}
+									{exercise.duration && (
+										<p>
+											<b>Duration </b>
+											{exercise.duration}s
+										</p>
+									)}
+									{exercise.weight && (
+										<p>
+											<b>Weight </b>
+											{exercise.weight}kg
+										</p>
+									)}
+									{exercise.rest && (
+										<p>
+											<b>Rest </b>
+											{exercise.rest}s
+										</p>
+									)}
 								</div>
-								<div className="tools"><Timer /><Counter /></div>
+								<div className="tools">
+									<Timer />
+									<Counter />
+								</div>
 							</div>
 						</div>
 					))}

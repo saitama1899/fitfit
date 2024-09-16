@@ -70,6 +70,7 @@ const RoutineWrapper = styled.div`
         border-radius: 30px;
         border: 1px solid #a4a4a4;
         border-bottom: 3px solid #a4a4a4;
+        min-height: 116px;
       }
     }
   }
