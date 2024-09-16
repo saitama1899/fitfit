@@ -15,6 +15,9 @@ const TimerWrapper = styled.div`
   .timer-controls {
     /* width: 50%; */
     .reset {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: none;
       border: none;
       padding: 0;
