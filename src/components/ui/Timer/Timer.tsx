@@ -45,6 +45,8 @@ const Timer: React.FC<TimerProps> = ({ initialTime = 0 }) => {
 				onMouseDown={handleMouseDown}
 				onMouseUp={handleMouseUp}
 				onMouseLeave={handleMouseUp}
+				onTouchStart={handleMouseDown}
+				onTouchEnd={handleMouseUp}
 			>
 				<span>
 					{Math.floor(time / 60)}:{time % 60 < 10 ? `0${time % 60}` : time % 60}
