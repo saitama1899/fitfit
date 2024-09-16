@@ -67,10 +67,12 @@ const RoutineWrapper = styled.div`
         justify-content: space-evenly;
         background: #f6f6f6c7;
         margin: 8px 0px;
-        border-radius: 30px;
+        border-radius: 22px;
         border: 1px solid #a4a4a4;
         border-bottom: 3px solid #a4a4a4;
         min-height: 116px;
+        font-family: 'dsDigi', sans-serif;
+        font-size: 17px;
       }
     }
   }

@@ -16,6 +16,12 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'dsDigi';
+    src: url('/fonts/DS-DIGI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
   
   html {
     background-repeat: no-repeat;

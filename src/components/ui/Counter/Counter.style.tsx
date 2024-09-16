@@ -9,7 +9,7 @@ const CounterWrapper = styled.div`
   .series-counter {
     display: flex;
     border: 1px solid #a4a4a4;
-    border-radius: 30px;
+    border-radius: 12px;
     width: 80%;
     height: 43px;
 
@@ -31,7 +31,10 @@ const CounterWrapper = styled.div`
     .count {
       font-size: 2rem;
       text-align: center;
+      display: flex;
       width: 33%;
+      align-items: center;
+      justify-content: center;
     }
   }
 

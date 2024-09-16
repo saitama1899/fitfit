@@ -8,7 +8,7 @@ const TimerWrapper = styled.div`
   color: ${({ theme }) => theme.colors.dark};
   width: 120px;
   .timer-display {
-    font-size: 2rem;
+    font-size: 3rem;
     /* width: 50%; */
     cursor: pointer;  
     transition: transform 0.1s ease-in-out;
