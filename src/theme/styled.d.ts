@@ -7,6 +7,7 @@ declare module "styled-components" {
 			secondary: string;
 			dark: string;
 			background: string;
+			primary_inverse: string;
 		};
 		layout: {
 			header_height: number;

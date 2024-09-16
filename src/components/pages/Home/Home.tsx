@@ -25,6 +25,12 @@ const Home: React.FC = () => {
 							<p>Crear</p>
 						</div>
 					</div>
+					<div
+						className="stretching"
+					>
+						<img src="./images/stretching.png" alt="stretching" />
+						<p>Estiramientos</p>
+					</div>
 				</>
 			)}
 		</HomeWrapper>

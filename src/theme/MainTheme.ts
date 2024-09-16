@@ -5,6 +5,7 @@ export const MainTheme: DefaultTheme = {
 		primary: "#15c192",
 		secondary: "#d8d8d8",
 		dark: "#161617",
+		primary_inverse: "#ea3e6d",
 		background:
 			"linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)",
 	},

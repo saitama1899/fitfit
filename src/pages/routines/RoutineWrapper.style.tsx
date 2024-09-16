@@ -54,7 +54,7 @@ const RoutineWrapper = styled.div`
         p {
           margin: 8px 0;
           display: flex;
-          border-bottom: 1px solid ${({ theme }) => theme.colors.dark};
+          border-bottom: 1px solid #3d3d3d;
           justify-content: space-between;
           padding: 0px 4px 4px;
         }

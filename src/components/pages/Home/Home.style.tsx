@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
   width: 100%;
   .routine {
     height: 120px;
     padding: 25px;
+    margin-bottom: 50px;
     background-color: ${(props) => props.theme.colors.primary};
     background-image: 
       linear-gradient(20deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent), linear-gradient(20deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
@@ -25,12 +23,6 @@ export const HomeWrapper = styled.div`
   .options {
     display: flex;
     justify-content: space-around;
-    p {
-      margin-top: 8px;
-      background: ${(props) => props.theme.colors.primary};
-      color: white;
-      padding: 1px 12px;
-    }
     .exercises {
       width: 100px;
       display: flex;
@@ -57,5 +49,24 @@ export const HomeWrapper = styled.div`
         filter: drop-shadow(4px 2px 0px rgba(0, 0, 0, 0.10));
       }
     }
+  }
+  .stretching {
+    margin: 0 auto;
+    width: 135px;
+    transform: rotateZ(10deg);
+    p {
+      background: ${(props) => props.theme.colors.primary_inverse};
+    }
+    img {
+      filter: brightness(0.75) grayscale(1);
+      width: 135px;
+    }
+  }
+  p {
+    margin-top: 8px;
+    background: ${(props) => props.theme.colors.primary};
+    color: white;
+    padding: 1px 12px;
+    text-align: center;
   }
 `;
