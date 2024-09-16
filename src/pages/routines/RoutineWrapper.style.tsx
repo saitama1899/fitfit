@@ -50,7 +50,7 @@ const RoutineWrapper = styled.div`
       display: flex;
       gap: 28px;
       .details {
-        width: 75%;
+        width: 50%;
         p {
           margin: 8px 0;
           display: flex;
@@ -60,7 +60,7 @@ const RoutineWrapper = styled.div`
         }
       }
       .tools {
-        width: 25%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
