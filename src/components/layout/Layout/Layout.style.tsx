@@ -6,9 +6,7 @@ const LayoutWrapper = styled.div`
   min-height: 100vh;
   max-width: 500px;
   margin: 0 auto;
-  @media (max-width: ${(props) => props.theme.breakpoints.sd}) {
-    padding: 24px 14px;
-  }
+  padding: 24px 14px;
 `;
 
 const MainContent = styled.main<{ hide: boolean }>`  
