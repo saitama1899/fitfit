@@ -8,7 +8,7 @@ const CounterWrapper = styled.div`
   width: 120px;
   .series-counter {
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 
     .decrement,
     .increment {
@@ -29,7 +29,7 @@ const CounterWrapper = styled.div`
     }
   }
 
-  .reset {
+  /* .reset {
     background: none;
     border: none;
     color: ${({ theme }) => theme.colors.primary};
@@ -40,7 +40,7 @@ const CounterWrapper = styled.div`
     &:hover {
       color: ${({ theme }) => theme.colors.secondary};
     }
-  }
+  } */
 `;
 
 export default CounterWrapper;

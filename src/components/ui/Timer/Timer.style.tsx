@@ -4,7 +4,7 @@ const TimerWrapper = styled.div`
   display: flex;
   gap: 8px;
   align-items: center;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   justify-content: space-between;
   color: ${({ theme }) => theme.colors.dark};
   width: 120px;
@@ -28,6 +28,7 @@ const TimerWrapper = styled.div`
       border-radius: 50%;
       width: 30px;
       height: 30px;
+      font-weight: 500;
     }
   }
 `;
