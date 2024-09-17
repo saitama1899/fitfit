@@ -3,10 +3,9 @@ import styled from "styled-components";
 const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   max-width: 500px;
   margin: 0 auto;
-  padding: 24px 14px;
 `;
 
 const MainContent = styled.main<{ hide: boolean }>`  
@@ -17,7 +16,6 @@ const MainContent = styled.main<{ hide: boolean }>`
   align-items: center;
   flex-grow: 1;
   margin-top: ${({ hide, theme }) => (hide ? "0" : `${theme.layout.header_height}px`)};
-  height: calc(100vh - ${({ theme }) => `${theme.layout.header_height}px`});
   overflow: hidden;
 `;
 

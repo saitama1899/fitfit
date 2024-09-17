@@ -63,6 +63,7 @@ const RoutineWrapper = styled.div`
       }
       .tools {
         width: 50%;
+        height: 132px;
         display: flex;
         flex-direction: column;
         align-items: center;

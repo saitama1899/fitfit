@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
   width: 100%;
+  height: 100%;
   .routine {
     height: 120px;
     padding: 25px;
     margin-bottom: 50px;
+    margin-top: 10px;
     background-color: ${(props) => props.theme.colors.primary};
     background-image: 
       linear-gradient(20deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent), linear-gradient(20deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);

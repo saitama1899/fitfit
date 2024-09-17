@@ -11,7 +11,7 @@ const Home: React.FC = () => {
 			{loading ? (
 				<Spinner />
 			) : (
-				<>
+				<div className="screen-content">
 					<Link className="routine" href="/routines/1">
 						<h1>Rutinas</h1>
 					</Link>
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
 							<p>Estiramientos</p>
 						</Link>
 					</div>
-				</>
+				</div>
 			)}
 		</HomeWrapper>
 	);
