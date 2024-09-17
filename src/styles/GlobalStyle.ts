@@ -89,7 +89,8 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
   }
 
   .screen-content {
-    height: 100%;
+    /* height: calc(100vh - 224px); */
+    height: calc(100vh - 144px);
     overflow-y: auto;
     overflow-x: hidden;
     flex-grow: 1;

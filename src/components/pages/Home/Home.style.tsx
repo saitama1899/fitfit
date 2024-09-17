@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const HomeWrapper = styled.div`
   width: 100%;
   height: 100%;
+  .screen-content {
+    height: 100%;
+  }
   .routine {
     height: 120px;
     padding: 25px;
