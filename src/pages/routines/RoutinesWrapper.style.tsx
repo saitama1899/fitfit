@@ -40,6 +40,10 @@ const RoutinesWrapper = styled.div`
         background: rgb(207 217 223 / 95%);
         z-index: 1;
       }
+
+      &.completed::before {
+        background:rgb(165 210 190 / 95%);
+      }
       
       p {
         z-index: 2;

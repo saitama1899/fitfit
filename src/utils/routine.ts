@@ -28,4 +28,13 @@ const exercise = (
 	};
 };
 
-export { getExercise, exercise };
+const getNextMonday = () => {
+	const now = new Date();
+	const nextMonday = new Date(
+		now.setDate(now.getDate() + ((1 + 7 - now.getDay()) % 7 || 7)),
+	);
+	nextMonday.setHours(0, 0, 0, 0);
+	return nextMonday.getTime();
+};
+
+export { getExercise, exercise, getNextMonday };
