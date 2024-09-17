@@ -90,7 +90,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
 
   .screen-content {
     /* height: calc(100vh - 224px); */
-    height: calc(100vh - 144px);
+    height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     flex-grow: 1;
@@ -102,7 +102,7 @@ const GlobalStyle: GlobalStyleComponent<object, DefaultTheme> =
     height: 100%;
   }
   .slick-dots {
-    bottom: 20px;
+    bottom: 60px;
   }
   .slick-active {
     button::before {

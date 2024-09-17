@@ -21,7 +21,7 @@ const RoutinesWrapper = styled.div`
       align-items: center;
       gap: 20px;
       padding: 10px 30px;
-      height: 80px;
+      height: 60px;
       position: relative;
       background-color: rgba(21, 193, 147, 0.25);
       color: #000000;
