@@ -50,6 +50,13 @@ const RoutinesWrapper = styled.div`
         font-weight: 500;
         font-size: 20px;
       }
+      span {
+        z-index: 2;
+        font-size: 14px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
     }
   }
 `;

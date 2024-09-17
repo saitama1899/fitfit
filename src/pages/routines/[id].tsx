@@ -15,8 +15,13 @@ const Routines: React.FC = () => {
 	const { loading, setLoading } = useAppContext();
 	const router = useRouter();
 	const { id } = router.query as unknown as Params;
-	const { getRoutineStatus, setRoutineStatus, getAllCompletedRoutines } =
-		useLocalStorage();
+	const {
+		getRoutineStatus,
+		setRoutineStatus,
+		getAllCompletedRoutines,
+		getRoutineCompletionCount,
+		incrementRoutineCompletionCount,
+	} = useLocalStorage();
 	const [routinesData, setRoutinesData] = useState<Routine[] | null>(null);
 	const [completedRoutines, setCompletedRoutines] = useState<number[]>([]);
 	const [hold, setHold] = useState<NodeJS.Timeout | null>(null);
@@ -47,7 +52,6 @@ const Routines: React.FC = () => {
 			setLoading(false);
 		}
 
-		// Recupera las rutinas completadas al cargar la página
 		setCompletedRoutines(getAllCompletedRoutines());
 	}, [id, setLoading]);
 
@@ -60,7 +64,8 @@ const Routines: React.FC = () => {
 	};
 
 	const handleHold = (id: number) => {
-		setRoutineStatus(id, true); // Marcar la rutina como completada
+		setRoutineStatus(id, true);
+		incrementRoutineCompletionCount(id);
 		setCompletedRoutines((prev) => [...prev, id]);
 	};
 
@@ -100,6 +105,7 @@ const Routines: React.FC = () => {
 							>
 								<h3>{routine.title}</h3>
 								{routine.subtitle && <p>{routine.subtitle}</p>}
+								<span>{getRoutineCompletionCount(routine.id)}💪🏻</span>
 							</div>
 						))}
 					</div>

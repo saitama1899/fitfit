@@ -49,7 +49,35 @@ const useLocalStorage = () => {
 		return completedRoutines;
 	};
 
-	return { getRoutineStatus, setRoutineStatus, getAllCompletedRoutines };
+	const getRoutineCompletionCount = (id: number) => {
+		try {
+			const count = window.localStorage.getItem(`routine-count-${id}`);
+			return count ? Number(count) : 0;
+		} catch (error) {
+			console.log(error);
+			return 0;
+		}
+	};
+
+	const incrementRoutineCompletionCount = (id: number) => {
+		try {
+			const currentCount = getRoutineCompletionCount(id);
+			window.localStorage.setItem(
+				`routine-count-${id}`,
+				String(currentCount + 1),
+			);
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+	return {
+		getRoutineStatus,
+		setRoutineStatus,
+		getAllCompletedRoutines,
+		getRoutineCompletionCount,
+		incrementRoutineCompletionCount,
+	};
 };
 
 export default useLocalStorage;
