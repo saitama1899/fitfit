@@ -121,7 +121,7 @@ const exercises: Exercise[] = [
 	// Back
 	{
 		id: 13,
-		name: "Bird-Dog",
+		name: "Bird-Dog (con peso)",
 		img: "/images/exercises/stretching/back/bird-dog.webp",
 		category: 2,
 		subCategory: 10,
@@ -351,7 +351,7 @@ const exercises: Exercise[] = [
 	},
 	{
 		id: 38,
-		name: "Overhead Tricep Extension",
+		name: "Overhead Tricep Extension (sentado)",
 		img: "/images/exercises/triceps/overhead-tricep-extension.gif",
 		category: 1,
 		subCategory: 15,
@@ -507,6 +507,114 @@ const exercises: Exercise[] = [
 		subCategory: 19,
 		description:
 			"Balancea la kettlebell entre las piernas y luego extiende las caderas para llevarla a la altura del pecho.",
+	},
+	{
+		id: 55,
+		name: "Dead Bug with Band",
+		img: "/images/exercises/core/dead-bug.gif",
+		category: 1,
+		subCategory: 14,
+		description:
+			"Tumbado boca arriba, presiona una goma con brazos rectos y baja una pierna extendida alternando. Control total del core.",
+	},
+	{
+		id: 56,
+		name: "Glute Bridge with Kettlebell",
+		img: "/images/exercises/core/glute-bridge-kettlebell.webp",
+		category: 1,
+		subCategory: 8,
+		description:
+			"Acostado boca arriba con los pies apoyados, coloca la kettlebell sobre la cadera y eleva la pelvis apretando glúteos.",
+	},
+	{
+		id: 57,
+		name: "Pallof Press",
+		img: "/images/exercises/core/pallof-press.gif",
+		category: 1,
+		subCategory: 14,
+		description:
+			"Con goma anclada lateralmente, extiende los brazos al frente evitando que el torso rote. Excelente para estabilidad lumbar.",
+	},
+	{
+		id: 58,
+		name: "Step-Up Dumbbell",
+		img: "/images/exercises/legs/dumbbell-step-ups.gif",
+		category: 1,
+		subCategory: 8,
+		description:
+			"Sube al banco con una pierna sosteniendo mancuernas, empuja con el glúteo y baja controlado.",
+	},
+	{
+		id: 59,
+		name: "Farmer Carry Dumbbells",
+		img: "/images/exercises/legs/farmers-carry.gif",
+		category: 1,
+		subCategory: 19,
+		description:
+			"Camina recto cargando mancuernas a los lados, manteniendo la espalda neutra y el core activado.",
+	},
+	{
+		id: 60,
+		name: "Side Plank",
+		img: "/images/exercises/core/side-plank-knees.webp",
+		category: 1,
+		subCategory: 14,
+		description:
+			"Acostado de lado, apoya el antebrazo y levanta la cadera, manteniendo el cuerpo en línea recta.",
+	},
+	{
+		id: 61,
+		name: "Push Up Bench",
+		img: "/images/exercises/biceps/push-up-bench.gif",
+		category: 1,
+		subCategory: 19,
+		description:
+			"Con las manos en un banco, realiza flexiones manteniendo el cuerpo recto y los codos cerca del torso.",
+	},
+	{
+		id: 62,
+		name: "Face Pull with Band",
+		img: "/images/exercises/biceps/face-pull-band.gif",
+		category: 1,
+		subCategory: 13,
+		description:
+			"Con una banda elástica anclada a la altura de la cara, tira de la banda hacia tu cara manteniendo los codos altos y los hombros relajados.",
+	},
+	{
+		id: 63,
+		name: "Hip Thrust",
+		img: "/images/exercises/legs/hip-thrust-bench.gif",
+		category: 1,
+		subCategory: 8,
+		description:
+			"Sentado en el suelo con la espalda apoyada en un banco, coloca una barra sobre las caderas y eleva la pelvis apretando los glúteos.",
+	},
+	{
+		id: 64,
+		name: "Bulgarian Split Squat",
+		img: "/images/exercises/legs/dumbbell-bulgarian.gif",
+		category: 1,
+		subCategory: 8,
+		description:
+			"Con una pierna apoyada en un banco detrás de ti, baja el cuerpo en una sentadilla con la pierna delantera, manteniendo el torso erguido.",
+	},
+	{
+		id: 65,
+		name: "Dumbbell Row Bench",
+		img: "/images/exercises/back/dumbbell-row-bench.gif",
+		category: 1,
+		subCategory: 10,
+		description:
+			"Con el torso apollado en un banco, tira de la mancuerna hacia la cadera, manteniendo el codo cerca del cuerpo y la espalda recta.",
+	},
+	{
+		id: 66,
+		name: "Sumo Deadlift",
+		img: "/images/exercises/legs/sumo-deadlift.gif",
+		category: 1,
+		subCategory: 8,
+		description:
+			"Con los pies más anchos que los hombros y las puntas hacia afuera, baja las pesas manteniendo la espalda recta y empuja con las piernas al subir.",
 	},
 ];
 

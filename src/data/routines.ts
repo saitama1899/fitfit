@@ -1,70 +1,75 @@
 import { exercise } from "@/utils/routine";
 
 const routines: Routine[] = [
-	// Ejercicio
 	{
 		id: 1,
 		title: "Día 1",
-		subtitle: "Pecho y Tríceps",
+		subtitle: "Core y Estabilidad",
 		category: 1,
-		subcategory: 11,
+		subcategory: 14,
 		exercises: [
-			exercise(35, [4, 10, 8, 90]),
-			exercise(37, [3, 12, 8, 60]),
-			exercise(36, [4, 11, 8, 90]),
-			exercise(38, [3, 11, 8, 60]),
+			exercise(55, [3, 12, 8, 60]), // Dead Bug
+			exercise(13, [3, 12, 8, 60]), // Bird-Dog
+			exercise(56, [4, 12, 8, 90]), // Glute Bridge KB
+			exercise(57, [3, 12, 8, 60]), // Pallof Press
+			exercise(60, [3, 30, 0, 60], true), // Plank
 		],
 	},
 	{
 		id: 2,
 		title: "Día 2",
-		subtitle: "Espalda y Bíceps",
+		subtitle: "Pecho y Tríceps",
 		category: 1,
-		subcategory: 10,
+		subcategory: 11,
 		exercises: [
-			exercise(39, [4, 10, 8, 90]),
-			exercise(40, [3, 11, 8, 60]),
-			exercise(41, [4, 11, 8, 90]),
-			exercise(42, [3, 11, 8, 60]),
+			exercise(35, [4, 10, 8, 90]), // Chest Dumbbell Press
+			exercise(36, [3, 12, 8, 60]), // Flyes
+			exercise(38, [3, 12, 8, 60]), // Overhead Tricep Extension
+			exercise(61, [3, 12, 8, 60]), // Bench Dips
+			exercise(37, [3, 12, 8, 60]), // Push-Up
+			exercise(62, [3, 12, 8, 60]), // Face Pulls
 		],
 	},
 	{
 		id: 3,
 		title: "Día 3",
-		subtitle: "Piernas",
+		subtitle: "Piernas y Glúteos",
 		category: 1,
 		subcategory: 8,
 		exercises: [
-			exercise(43, [4, 12, 8, 90]),
-			exercise(44, [3, 11, 8, 60]),
-			exercise(45, [4, 11, 8, 90]),
-			exercise(46, [4, 18, 8, 60]),
+			exercise(63, [4, 12, 8, 90]), // Glute Bridge KB
+			exercise(58, [3, 12, 8, 60]), // Step-Up Dumbbell
+			exercise(45, [3, 10, 8, 90]), // Romanian Deadlift
+			exercise(64, [3, 12, 8, 60]), // Bulgarian Split Squat
+			exercise(43, [3, 12, 8, 90]), // Squat
 		],
 	},
 	{
 		id: 4,
 		title: "Día 4",
-		subtitle: "Hombros y Core",
+		subtitle: "Espalda y Core",
 		category: 1,
-		subcategory: 13,
+		subcategory: 10,
 		exercises: [
-			exercise(47, [4, 11, 8, 90]),
-			exercise(48, [3, 13, 8, 60]),
-			exercise(49, [3, 11, 8, 60]),
-			exercise(50, [3, 45, 0, 60], true),
+			exercise(65, [4, 10, 8, 90]), // Dumbbell Row
+			exercise(40, [3, 12, 8, 60]), // Pullover
+			exercise(62, [3, 12, 8, 60]), // Face Pulls
+			exercise(13, [3, 12, 8, 60]), // Bird-Dog
+			exercise(57, [3, 12, 8, 60]), // Pallof Press
 		],
 	},
 	{
 		id: 5,
 		title: "Día 5",
+		subtitle: "Full Body controlado",
 		category: 1,
-		subtitle: "Cuerpo Completo",
 		subcategory: 14,
 		exercises: [
-			exercise(51, [4, 9, 8, 90]),
-			exercise(52, [4, 11, 8, 60]),
-			exercise(53, [3, 13, 8, 90]),
-			exercise(54, [4, 18, 8, 60]),
+			exercise(43, [3, 12, 8, 90]), // Sumo Deadlift
+			exercise(35, [4, 10, 8, 90]), // Chest Dumbbell Press
+			exercise(59, [3, 40, 0, 60]), // Farmer Carry
+			exercise(56, [3, 12, 8, 90]), // Glute Bridge
+			exercise(50, [3, 30, 0, 60], true), // Plank
 		],
 	},
 	// Estiramiento
